@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">  
+  <link rel="stylesheet" type="text/css" href="estilos.css" />
+  <title>CSS Temas</title>   
+</head>
+<body>
+    <div id="container">
+        
+        <div id="header">
+            <h1>
+                Mi aplicación web
+            </h1>
+        </div>
+        
+        <div id="navigation"> 
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogos</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="#">Configuración</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <!-- CONTENIDO DE LA APLICACIÓN  -->
+            <h1>
+                Título 1
+            </h1>
+            
+            <h2>
+                Título 2
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+            </p>
+            <p>
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+            </p>
+                        
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Cliente</th>
+                        <th>Compras</th>
+                    </tr>                           
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td class="right">$1,250.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>María López</td>
+                        <td class="right">$470.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Gabriela Torres</td>
+                        <td class="right">$2,500.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Luis Contreras</td>
+                        <td class="right">$350.00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Mariana Escobedo</td>
+                        <td class="right">$860.00</td>
+                    </tr>                            
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total: $100.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            
+              <fieldset><legend>Vertical</legend>
+                    <form id="vertical">
+                        <a href="#" title="Crear una cuenta de usuario nueva">Crear una cuenta</a>
+                        
+						<div class="group">
+							<label>Usuario</label>
+							<input type="text" placeholder="usuario@ucc.mx">
+                        </div>
+                        
+						<div class="group">
+	                        <label>Contraseña</label>
+    	                    <input type="password">
+        				</div>                
+                        
+						<div class="group">
+							<label>Seleccione un valor</label>
+							<select>
+								<option value="1">Opción 1</option>
+								<option value="2">Opción 2</option>
+							</select>
+						</div>
+                        
+						<div class="group">
+	                        <label class="chk"><input type="radio" name="opcion1"> Opción 1</label>
+    	                    <label class="chk"><input type="radio" name="opcion1" value="s"> Opción 2</label>
+						</div>
+                        
+						<div class="group">
+	                        <label>Comentarios</label>
+    	                    <textarea cols="40" rows="4"></textarea>
+						</div>
+                        
+						<div class="group">
+	                        <label class="chk"><input type="checkbox" value="s"> Aceptar el acuerdo</label><br><br>                   
+						</div>
+                        
+						<div class="group">
+	                        <button type="button">Cancelar</button> <button type="button" class="boton-1">Enviar</button>
+						</div>
+                    </form>
+            </fieldset>
+            <br><br>
+            
+            
+            
+            <fieldset><legend>Horizontal</legend>            
+                <form id="horizontal">                    
+                    <input type="text" placeholder="usuario@ucc.mx">
+                    <input type="password" placeholder="contraseña">                    
+                
+                <label class="chk"><input type="checkbox" value="s"> Aceptar el acuerdo</label>                  
+                
+                <button type="button">Cancelar</button> <button type="button" class="boton-1">Enviar</button>
+                </form>                             
+            </fieldset>
+            
+            <br><br>
+            
+            <fieldset><legend>Alineado</legend>
+                <form id="alineado">
+                    <div class="group">
+                        <label>Usuario</label>
+                        <input type="text" placeholder="usuario@ucc.mx">
+                     </div>
+                    
+                    <div class="group">
+                        <label>Contraseña</label>
+                        <input type="password">
+                    </div>
+                    
+                    <div class="group">
+                        <label>Seleccione un valor</label>
+                        <select>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="group">
+                        <label class="chk"><input type="radio" name="opcion1"> Opción 1</label>
+                        <label class="chk"><input type="radio" name="opcion1" value="s"> Opción 2</label>
+                     </div>                   
+                  
+                    
+                    <div class="group">
+                        <label class="chk"><input type="checkbox" value="s"> Aceptar el acuerdo</label><br><br>
+                    </div>                   
+                    
+                    <div class="group">
+                        <button type="button">Cancelar</button> <button type="button" class="boton-1">Enviar</button>
+                     </div>
+                </form>
+            </fieldset>
+        </div>
+        
+        <div id="footer">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogos</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="#">Configuración</a></li>
+            </ul>
+            <div class="iconos">
+                <div class="visitanos">Visitanos en</div>
+                <a href="http://www.facebook.com" target="_blank"><img src="warning.png" width="32" height="32"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="warning.png" width="32" height="32"></a>
+                <a href="http://www.youtube.com" target="_blank"><img src="warning.png" width="32" height="32"></a>
+            </div>
+            <h2>Mi aplicación web</h2>
+            <p>Copyright © App name, 20XX</p>
+        </div>
+        
+    </div>
+</body>
+</html>
