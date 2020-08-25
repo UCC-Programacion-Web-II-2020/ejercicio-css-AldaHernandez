@@ -10,8 +10,15 @@ img{ border:0; }
 /*Texto alineado al centro*/
 .center{ text-align:center; }
 
-h1{	font-size: 2.0em; }
-h2{	font-size: 1.5em; }
+h1{
+	font-size: 2.0em;
+	color: #507876;
+	text-align: center;
+}
+h2{
+	font-size: 1.5em;
+	color: #7AC4C0;
+}
 
 
 /*Contenedor principal*/
@@ -19,6 +26,8 @@ h2{	font-size: 1.5em; }
 	margin: 0 auto;
 	max-width: 1024px;
 	border: 1px solid #000;
+	color: #C58EBC;
+	font-family: 'Montserrat', sans-serif;
 }
 /*********************************/
 /*Encabezado*/
@@ -26,24 +35,27 @@ h2{	font-size: 1.5em; }
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background: #784A70;
 }
 
 #header h1 { 
 	margin: 0;
-	font-weight:300;	  
+	font-weight:300;
+	text-align: center;
 }
 /*********************************/
 /*Menú*/
 #navigation {
 	float: left;
 	width: 100%;
-	border:1px solid #000
+	border:1px solid #000;
+	background: #C58EBC;
 }
 
 #navigation ul {	
 	margin: 0;
 	padding: 0;
-	list-style-type: none;	
+	list-style-type: none;
 }
 
 #navigation ul li {	display: inline; }
@@ -52,10 +64,11 @@ h2{	font-size: 1.5em; }
 	display: block;
 	float: left;
 	padding: 5px 10px;
-	text-decoration: none;	
+	text-decoration: none;
+	color: #507876;
 }
 
-#navigation li a:hover { background:#FF0000; }
+#navigation li a:hover { background:#784A70; }
 /*********************************/
 /*Contenido*/
 #content {
@@ -65,6 +78,7 @@ h2{	font-size: 1.5em; }
 
 #content a { 
 	/* Color de los hipervinculos*/
+	color: #507876;
 }
 
 #content h1 {		
@@ -73,6 +87,16 @@ h2{	font-size: 1.5em; }
 
 #content h1, #content h2 {
 	margin: 0 0 1em 0;	
+}
+
+#content table{
+	margin: auto;
+	text-align: center;
+}
+
+#content table thead{
+	background: #784A70;
+	color: #7AC4C0;
 }
 /*********************************/
 /*Pie*/
@@ -97,6 +121,7 @@ h2{	font-size: 1.5em; }
 
 #footer ul li a {
 	text-decoration:none;
+	color: #507876;
 }
 
 #footer ul li a:hover {	text-decoration:underline; }
@@ -138,3 +163,4 @@ label.chk input {
 #horizontal textarea, .horizontal select, .horizontal input, .horizontal label{
 	display:inline;
 }
+

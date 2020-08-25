@@ -612,7 +612,7 @@ class csstidy_optimise
 
         foreach($shorthands as $key => $value)
         {
-            if(isset($array[$value[0]]) && isset($array[$value[1]])
+            if(isset($value[0]) && isset($value[1]) && isset($value[2]) && isset($value[3]) &&  isset($array[$value[0]]) && isset($array[$value[1]])
             && isset($array[$value[2]]) && isset($array[$value[3]]) && $value !== 0)
             {
                 $return[$key] = '';
